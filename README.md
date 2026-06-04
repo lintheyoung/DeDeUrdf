@@ -53,6 +53,12 @@ curl -L -o RSReBot-assets/RSReBot_fluxweave_dm_mujoco_urdf.zip \
 
 完整图文教程见 [docs/USER_GUIDE.md](./docs/USER_GUIDE.md)，里面包含导入、编辑、预览、保存、导出和常见问题的局部截图。
 
+## 参考与致谢
+
+DeDeUrdf 在 URDF 装配工作流、项目格式兼容和交互思路上参考学习了 [DataFlux-Robot/FluxWeave](https://github.com/DataFlux-Robot/FluxWeave)。FluxWeave 是 DataFlux Robot 开源的 URDF tool，采用 Apache License 2.0。
+
+本项目保留对历史 `project.fluxweave.json` 和 FluxWeave V3 graph project 的导入兼容，方便已有装配数据继续在浏览器端打开、检查和导出。
+
 ## 本地启动
 
 ```bash

@@ -8,6 +8,12 @@ DeDeUrdf 是一个浏览器端 URDF 装配工具。它可以把 STL 模型、lin
 
 本文档中的截图来自线上站点，并使用内置 RSReBot 示例项目演示完整流程。
 
+## 参考与致谢
+
+DeDeUrdf 在 URDF 装配工作流、项目格式兼容和交互思路上参考学习了 [DataFlux-Robot/FluxWeave](https://github.com/DataFlux-Robot/FluxWeave)。FluxWeave 是 DataFlux Robot 开源的 URDF tool，采用 Apache License 2.0。
+
+因此，DeDeUrdf 会继续兼容历史 `project.fluxweave.json` 和 FluxWeave V3 graph project，方便已有装配数据在浏览器端继续打开、检查和导出。
+
 ## RSReBot 示例文件下载
 
 如果你想跟着本文档复现完整流程，可以先下载 RSReBot 示例文件：
