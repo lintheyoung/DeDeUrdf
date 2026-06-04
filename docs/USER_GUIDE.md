@@ -471,7 +471,8 @@ DeDeUrdf 导出的 MuJoCo ZIP 主要解决几何、link、joint 和 mesh 路径�
 本地开发：
 
 ```bash
-cd /Users/dede/Downloads/Mujoco/DeDeUrdf
+git clone https://github.com/lintheyoung/DeDeUrdf.git
+cd DeDeUrdf
 nvm use
 npm install
 npm run dev

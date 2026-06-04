@@ -8,6 +8,8 @@ DeDeUrdf 是一个纯 Next.js 的浏览器端 URDF 装配工作台，用来把�
 
 Production: <https://dedeurdf.vercel.app/>
 
+Open source: <https://github.com/lintheyoung/DeDeUrdf>
+
 ## 功能
 
 - 批量导入 STL，并自动生成初始 `base_link -> link...` 链式结构。
