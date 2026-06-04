@@ -10,6 +10,31 @@ Production: <https://dedeurdf.vercel.app/>
 
 Open source: <https://github.com/lintheyoung/DeDeUrdf>
 
+## RSReBot 示例资产
+
+如果想直接体验完整机械臂流程，可以下载 RSReBot 示例资产：
+
+| 文件 | 大小 | 用途 | 下载 |
+| --- | --- | --- | --- |
+| `RSReBot.f3z` | 约 17.8MB | Fusion 360 原始项目归档，适合继续编辑 CAD、检查装配关系、重新导出 STL | [下载](https://pub-6c1e280a27614b05891bfd818585735e.r2.dev/RSReBot/RSReBot.f3z) |
+| `RSReBot.step` | 约 16.3MB | 通用 CAD 交换格式，适合 SolidWorks、FreeCAD、Onshape 等工具查看或转换 | [下载](https://pub-6c1e280a27614b05891bfd818585735e.r2.dev/RSReBot/RSReBot.step) |
+| `RSReBot_accurate_web_project.zip` | 约 9.6MB | DeDeUrdf 可继续编辑项目，打开网页后点击“导入 JSON/ZIP”选择它 | [下载](https://pub-6c1e280a27614b05891bfd818585735e.r2.dev/RSReBot/RSReBot_accurate_web_project.zip) |
+| `RSReBot_fluxweave_dm_mujoco_urdf.zip` | 约 20.2MB | MuJoCo 可加载 URDF 包，包含 `urdf/` 和 `meshes/` | [下载](https://pub-6c1e280a27614b05891bfd818585735e.r2.dev/RSReBot/RSReBot_fluxweave_dm_mujoco_urdf.zip) |
+
+命令行下载：
+
+```bash
+mkdir -p RSReBot-assets
+curl -L -o RSReBot-assets/RSReBot.f3z \
+  https://pub-6c1e280a27614b05891bfd818585735e.r2.dev/RSReBot/RSReBot.f3z
+curl -L -o RSReBot-assets/RSReBot.step \
+  https://pub-6c1e280a27614b05891bfd818585735e.r2.dev/RSReBot/RSReBot.step
+curl -L -o RSReBot-assets/RSReBot_accurate_web_project.zip \
+  https://pub-6c1e280a27614b05891bfd818585735e.r2.dev/RSReBot/RSReBot_accurate_web_project.zip
+curl -L -o RSReBot-assets/RSReBot_fluxweave_dm_mujoco_urdf.zip \
+  https://pub-6c1e280a27614b05891bfd818585735e.r2.dev/RSReBot/RSReBot_fluxweave_dm_mujoco_urdf.zip
+```
+
 ## 功能
 
 - 批量导入 STL，并自动生成初始 `base_link -> link...` 链式结构。

@@ -8,6 +8,23 @@ DeDeUrdf 是一个浏览器端 URDF 装配工具。它可以把 STL 模型、lin
 
 本文档中的截图来自线上站点，并使用内置 RSReBot 示例项目演示完整流程。
 
+## RSReBot 示例文件下载
+
+如果你想跟着本文档复现完整流程，可以先下载 RSReBot 示例文件：
+
+| 文件 | 大小 | 用途 | 下载 |
+| --- | --- | --- | --- |
+| `RSReBot.f3z` | 约 17.8MB | Fusion 360 原始项目归档，适合继续编辑 CAD、检查装配关系、重新导出 STL | [下载](https://pub-6c1e280a27614b05891bfd818585735e.r2.dev/RSReBot/RSReBot.f3z) |
+| `RSReBot.step` | 约 16.3MB | 通用 CAD 交换格式，适合 SolidWorks、FreeCAD、Onshape 等工具查看或转换 | [下载](https://pub-6c1e280a27614b05891bfd818585735e.r2.dev/RSReBot/RSReBot.step) |
+| `RSReBot_accurate_web_project.zip` | 约 9.6MB | DeDeUrdf 可继续编辑项目，打开 DeDeUrdf 后点击“导入 JSON/ZIP”选择它 | [下载](https://pub-6c1e280a27614b05891bfd818585735e.r2.dev/RSReBot/RSReBot_accurate_web_project.zip) |
+| `RSReBot_fluxweave_dm_mujoco_urdf.zip` | 约 20.2MB | MuJoCo 可加载 URDF 包，包含 `urdf/` 和 `meshes/` | [下载](https://pub-6c1e280a27614b05891bfd818585735e.r2.dev/RSReBot/RSReBot_fluxweave_dm_mujoco_urdf.zip) |
+
+推荐选择：
+
+- 想在 DeDeUrdf 里继续调关节和导出：下载 `RSReBot_accurate_web_project.zip`。
+- 想直接去 MuJoCo 里加载和跑控制：下载 `RSReBot_fluxweave_dm_mujoco_urdf.zip`。
+- 想回到 CAD 源头重新测量、修改或导出 STL：下载 `RSReBot.f3z` 或 `RSReBot.step`。
+
 ## 0. 先理解一个关键点
 
 用户在页面里选择 STL、JSON、ZIP 或文件夹时，文件不会上传到 Vercel。DeDeUrdf 只在浏览器内存中读取和处理这些文件。
