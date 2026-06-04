@@ -24,7 +24,7 @@ Production: <https://dedeurdf.vercel.app/>
 
 ## 使用手册
 
-完整图文教程见 [docs/USER_GUIDE.md](./docs/USER_GUIDE.md)。
+完整图文教程见 [docs/USER_GUIDE.md](./docs/USER_GUIDE.md)，里面包含导入、编辑、预览、保存、导出和常见问题的局部截图。
 
 ## 本地启动
 
