@@ -4,6 +4,10 @@ DeDeUrdf 是一个纯 Next.js 的浏览器端 URDF 装配工作台，用来把�
 
 它不依赖 Python 服务，不接数据库，也不把用户上传的 STL/JSON/ZIP 保存到服务器。文件在浏览器内存中完成解析、预览、组装和导出。
 
+## 在线访问
+
+Production: <https://dedeurdf.vercel.app/>
+
 ## 功能
 
 - 批量导入 STL，并自动生成初始 `base_link -> link...` 链式结构。
