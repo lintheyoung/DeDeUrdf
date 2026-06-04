@@ -22,6 +22,10 @@ Production: <https://dedeurdf.vercel.app/>
 - 导出普通 URDF ZIP。
 - 导出 MuJoCo URDF ZIP：mesh 路径会转换为 `../meshes/*.stl`，STL 会转换成 binary STL，解压后可以用 MuJoCo 加载。
 
+## 使用手册
+
+完整图文教程见 [docs/USER_GUIDE.md](./docs/USER_GUIDE.md)。
+
 ## 本地启动
 
 ```bash
