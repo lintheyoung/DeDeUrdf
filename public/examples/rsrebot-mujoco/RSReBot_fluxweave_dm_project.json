@@ -1,0 +1,725 @@
+{
+  "version": 1,
+  "project_name": "RSReBot_fluxweave_dm",
+  "auto_color": true,
+  "graph": {
+    "nodes": [
+      {
+        "uid": "base_root",
+        "type": "base",
+        "name": "world",
+        "link_name": "world",
+        "pos": [
+          -180,
+          -150
+        ]
+      },
+      {
+        "uid": "base",
+        "type": "part",
+        "name": "base",
+        "link_name": "base_link",
+        "stl_path": "metadata_stl/base.stl",
+        "pos": [
+          0,
+          0
+        ]
+      },
+      {
+        "uid": "link1",
+        "type": "part",
+        "name": "link1",
+        "link_name": "link1",
+        "stl_path": "metadata_stl/link1.stl",
+        "pos": [
+          420,
+          0
+        ]
+      },
+      {
+        "uid": "link2",
+        "type": "part",
+        "name": "link2",
+        "link_name": "link2",
+        "stl_path": "metadata_stl/link2.stl",
+        "pos": [
+          420,
+          150
+        ]
+      },
+      {
+        "uid": "link3",
+        "type": "part",
+        "name": "link3",
+        "link_name": "link3",
+        "stl_path": "metadata_stl/link3.stl",
+        "pos": [
+          420,
+          300
+        ]
+      },
+      {
+        "uid": "link4",
+        "type": "part",
+        "name": "link4",
+        "link_name": "link4",
+        "stl_path": "metadata_stl/link4.stl",
+        "pos": [
+          420,
+          450
+        ]
+      },
+      {
+        "uid": "link5",
+        "type": "part",
+        "name": "link5",
+        "link_name": "link5",
+        "stl_path": "metadata_stl/link5.stl",
+        "pos": [
+          420,
+          600
+        ]
+      },
+      {
+        "uid": "link6",
+        "type": "part",
+        "name": "link6",
+        "link_name": "link6",
+        "stl_path": "metadata_stl/link6.stl",
+        "pos": [
+          420,
+          750
+        ]
+      },
+      {
+        "uid": "end",
+        "type": "part",
+        "name": "end",
+        "link_name": "end_link",
+        "stl_path": "metadata_stl/end.stl",
+        "pos": [
+          420,
+          900
+        ]
+      },
+      {
+        "uid": "conn_world_base",
+        "type": "connector",
+        "name": "world_to_base",
+        "pos": [
+          210,
+          -150
+        ],
+        "joint_type": "fixed",
+        "joint_name": "world_to_base",
+        "joint_angle": 0.0,
+        "offset_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "offset_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint_limit_lower": 0.0,
+        "joint_limit_upper": 0.0,
+        "joint_effort": 0.0,
+        "joint_velocity": 0.0,
+        "joint_default_position": 0.0,
+        "parent_local_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "parent_local_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "parent_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "child_local_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "child_local_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "child_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "parent_binding": {
+          "node_uid": "base_root",
+          "point": "root"
+        },
+        "child_binding": {
+          "node_uid": "base",
+          "point": "base_root"
+        }
+      },
+      {
+        "uid": "conn_joint1",
+        "type": "connector",
+        "name": "joint1",
+        "pos": [
+          210,
+          0
+        ],
+        "joint_type": "revolute",
+        "joint_name": "joint1",
+        "joint_angle": 0.0,
+        "offset_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "offset_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint_limit_lower": -2.8,
+        "joint_limit_upper": 2.8,
+        "joint_effort": 27.0,
+        "joint_velocity": 50.0,
+        "joint_default_position": 0.0,
+        "parent_local_xyz": [
+          -8.416e-05,
+          0.0,
+          0.0868
+        ],
+        "parent_local_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "parent_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "child_local_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "child_local_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "child_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "parent_binding": {
+          "node_uid": "base",
+          "point": "joint1_parent"
+        },
+        "child_binding": {
+          "node_uid": "link1",
+          "point": "joint1_child"
+        }
+      },
+      {
+        "uid": "conn_joint2",
+        "type": "connector",
+        "name": "joint2",
+        "pos": [
+          210,
+          150
+        ],
+        "joint_type": "revolute",
+        "joint_name": "joint2",
+        "joint_angle": 0.0,
+        "offset_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "offset_rpy": [
+          -1.5708,
+          0.0,
+          0.0
+        ],
+        "joint_limit_lower": -3.14,
+        "joint_limit_upper": 0.0,
+        "joint_effort": 27.0,
+        "joint_velocity": 50.0,
+        "joint_default_position": 0.0,
+        "parent_local_xyz": [
+          0.02,
+          0.028375,
+          0.055212
+        ],
+        "parent_local_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "parent_axis": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "child_local_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "child_local_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "child_axis": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "parent_binding": {
+          "node_uid": "link1",
+          "point": "joint2_parent"
+        },
+        "child_binding": {
+          "node_uid": "link2",
+          "point": "joint2_child"
+        }
+      },
+      {
+        "uid": "conn_joint3",
+        "type": "connector",
+        "name": "joint3",
+        "pos": [
+          210,
+          300
+        ],
+        "joint_type": "revolute",
+        "joint_name": "joint3",
+        "joint_angle": 0.0,
+        "offset_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "offset_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint_limit_lower": -3.14,
+        "joint_limit_upper": 0.0,
+        "joint_effort": 27.0,
+        "joint_velocity": 50.0,
+        "joint_default_position": 0.0,
+        "parent_local_xyz": [
+          -0.264,
+          0.0,
+          0.0
+        ],
+        "parent_local_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "parent_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "child_local_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "child_local_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "child_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "parent_binding": {
+          "node_uid": "link2",
+          "point": "joint3_parent"
+        },
+        "child_binding": {
+          "node_uid": "link3",
+          "point": "joint3_child"
+        }
+      },
+      {
+        "uid": "conn_joint4",
+        "type": "connector",
+        "name": "joint4",
+        "pos": [
+          210,
+          450
+        ],
+        "joint_type": "revolute",
+        "joint_name": "joint4",
+        "joint_angle": 0.0,
+        "offset_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "offset_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint_limit_lower": -1.87,
+        "joint_limit_upper": 1.57,
+        "joint_effort": 7.0,
+        "joint_velocity": 200.0,
+        "joint_default_position": 0.0,
+        "parent_local_xyz": [
+          0.2426,
+          -0.054,
+          0.00565
+        ],
+        "parent_local_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "parent_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "child_local_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "child_local_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "child_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "parent_binding": {
+          "node_uid": "link3",
+          "point": "joint4_parent"
+        },
+        "child_binding": {
+          "node_uid": "link4",
+          "point": "joint4_child"
+        }
+      },
+      {
+        "uid": "conn_joint5",
+        "type": "connector",
+        "name": "joint5",
+        "pos": [
+          210,
+          600
+        ],
+        "joint_type": "revolute",
+        "joint_name": "joint5",
+        "joint_angle": 0.0,
+        "offset_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "offset_rpy": [
+          -1.5708,
+          0.0,
+          0.0
+        ],
+        "joint_limit_lower": -1.57,
+        "joint_limit_upper": 1.57,
+        "joint_effort": 7.0,
+        "joint_velocity": 200.0,
+        "joint_default_position": 0.0,
+        "parent_local_xyz": [
+          0.078331,
+          -0.037782,
+          -0.0347
+        ],
+        "parent_local_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "parent_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "child_local_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "child_local_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "child_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "parent_binding": {
+          "node_uid": "link4",
+          "point": "joint5_parent"
+        },
+        "child_binding": {
+          "node_uid": "link5",
+          "point": "joint5_child"
+        }
+      },
+      {
+        "uid": "conn_joint6",
+        "type": "connector",
+        "name": "joint6",
+        "pos": [
+          210,
+          750
+        ],
+        "joint_type": "revolute",
+        "joint_name": "joint6",
+        "joint_angle": 0.0,
+        "offset_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "offset_rpy": [
+          0.0,
+          1.5708,
+          0.0
+        ],
+        "joint_limit_lower": -3.14,
+        "joint_limit_upper": 3.14,
+        "joint_effort": 7.0,
+        "joint_velocity": 200.0,
+        "joint_default_position": 0.0,
+        "parent_local_xyz": [
+          0.023692,
+          0.0,
+          0.0403
+        ],
+        "parent_local_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "parent_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "child_local_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "child_local_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "child_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "parent_binding": {
+          "node_uid": "link5",
+          "point": "joint6_parent"
+        },
+        "child_binding": {
+          "node_uid": "link6",
+          "point": "joint6_child"
+        }
+      },
+      {
+        "uid": "conn_end_joint",
+        "type": "connector",
+        "name": "end_joint",
+        "pos": [
+          210,
+          900
+        ],
+        "joint_type": "fixed",
+        "joint_name": "end_joint",
+        "joint_angle": 0.0,
+        "offset_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "offset_rpy": [
+          0.0,
+          -1.5708,
+          3.1415
+        ],
+        "joint_limit_lower": 0.0,
+        "joint_limit_upper": 0.0,
+        "joint_effort": 0.0,
+        "joint_velocity": 0.0,
+        "joint_default_position": 0.0,
+        "parent_local_xyz": [
+          0.0,
+          -1.8e-05,
+          0.166309
+        ],
+        "parent_local_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "parent_axis": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "child_local_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "child_local_rpy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "child_axis": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "parent_binding": {
+          "node_uid": "link6",
+          "point": "end_parent"
+        },
+        "child_binding": {
+          "node_uid": "end",
+          "point": "end_child"
+        }
+      }
+    ],
+    "connections": [
+      {
+        "from_uid": "base_root",
+        "from_port": "root",
+        "to_uid": "conn_world_base",
+        "to_port": "parent"
+      },
+      {
+        "from_uid": "conn_world_base",
+        "from_port": "child",
+        "to_uid": "base",
+        "to_port": "C:base_root"
+      },
+      {
+        "from_uid": "base",
+        "from_port": "P:joint1_parent",
+        "to_uid": "conn_joint1",
+        "to_port": "parent"
+      },
+      {
+        "from_uid": "conn_joint1",
+        "from_port": "child",
+        "to_uid": "link1",
+        "to_port": "C:joint1_child"
+      },
+      {
+        "from_uid": "link1",
+        "from_port": "P:joint2_parent",
+        "to_uid": "conn_joint2",
+        "to_port": "parent"
+      },
+      {
+        "from_uid": "conn_joint2",
+        "from_port": "child",
+        "to_uid": "link2",
+        "to_port": "C:joint2_child"
+      },
+      {
+        "from_uid": "link2",
+        "from_port": "P:joint3_parent",
+        "to_uid": "conn_joint3",
+        "to_port": "parent"
+      },
+      {
+        "from_uid": "conn_joint3",
+        "from_port": "child",
+        "to_uid": "link3",
+        "to_port": "C:joint3_child"
+      },
+      {
+        "from_uid": "link3",
+        "from_port": "P:joint4_parent",
+        "to_uid": "conn_joint4",
+        "to_port": "parent"
+      },
+      {
+        "from_uid": "conn_joint4",
+        "from_port": "child",
+        "to_uid": "link4",
+        "to_port": "C:joint4_child"
+      },
+      {
+        "from_uid": "link4",
+        "from_port": "P:joint5_parent",
+        "to_uid": "conn_joint5",
+        "to_port": "parent"
+      },
+      {
+        "from_uid": "conn_joint5",
+        "from_port": "child",
+        "to_uid": "link5",
+        "to_port": "C:joint5_child"
+      },
+      {
+        "from_uid": "link5",
+        "from_port": "P:joint6_parent",
+        "to_uid": "conn_joint6",
+        "to_port": "parent"
+      },
+      {
+        "from_uid": "conn_joint6",
+        "from_port": "child",
+        "to_uid": "link6",
+        "to_port": "C:joint6_child"
+      },
+      {
+        "from_uid": "link6",
+        "from_port": "P:end_parent",
+        "to_uid": "conn_end_joint",
+        "to_port": "parent"
+      },
+      {
+        "from_uid": "conn_end_joint",
+        "from_port": "child",
+        "to_uid": "end",
+        "to_port": "C:end_child"
+      }
+    ]
+  }
+}
